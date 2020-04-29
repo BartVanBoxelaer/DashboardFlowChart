@@ -1,177 +1,855 @@
 <header>
-  <div class="container">
-  <h1 class="text-center">Which Dashboarding tool should I use?</h1>
-  </div>
+    <div class="container">
+        <h2 class="text-center">Which reporting tool should I use?</h2>
+    </div>
 
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-<link rel="stylesheet" href="DashboardCSS.css" type="text/css">
+    <link rel="stylesheet" href="DashboardCSS.css" type="text/css">
 
 </header>
 
+<!-- Step 1 - Start -->
 <div class="container">
-  <h2 class="page-header">Step 1: Where is the data?</h2>
-  <div class="row">
-    <div class="col-xs-12">
-  <p class="lead text-center bg-info btn text-info center-block">Is the data in a Borealis system (i.e. database)?</p>
-      <div class="row">
-        <div class="col-xs-6 text-center">
-           <p class="btn"><span class="glyphicon glyphicon-arrow-down"></span>
-        </div>
-        <div class="col-xs-6 text-center">
-          <p class="btn">
-          <span class="glyphicon glyphicon-arrow-down"></span></p>
-        </div>
-      </div>
+    <h3 class="page-header">Step 1: Where is the data?</h3>
+    <div class="row">
+        <div class="col-xs-12">
+            <p class="lead text-center bg-info btn text-info center-block">Is the data in a Borealis system (i.e. database)?</p>
+            <div class="row">
+                <div class="col-xs-6 text-center">
+                    <p class="btn"><span class="glyphicon glyphicon-arrow-down"></span>
+                </div>
+                <div class="col-xs-6 text-center">
+                    <p class="btn">
+                        <span class="glyphicon glyphicon-arrow-down"></span></p>
+                </div>
+            </div>
 
+        </div>
     </div>
-  </div>
-  <div class="row">
-<!-- start step 1 >> Yes       -->  
-    <div class="col-xs-6 text-center">
-	  <p class="center-block"><span class="btn btn-success btn-lg" onclick="myFunctionBY1()">Yes</span></p>
-      
-	  <div id="buttonYes1" style="display: none">
-		  <p class="btn center-block"><span class="glyphicon glyphicon-arrow-down"></span></p>
-		  <p class="bg-info text-info btn">Is the data in SAP (i.e. SAP BW database)?</p>
-		  <div class="row">
-			<div class="col-xs-6 text-center">
-			   <p class="btn"><span class="glyphicon glyphicon-arrow-down"></span>
-			</div>
-			<div class="col-xs-6 text-center">
-			  <p class="btn">
-			  <span class="glyphicon glyphicon-arrow-down"></span></p>
-			</div>
-		  </div>
-		  <div class="row">
-			<div class="col-xs-6">
-				<p class="center-block"><span class="btn btn-success btn-lg">Yes</span></p>
-				<p class="btn">
-				<span class="glyphicon glyphicon-arrow-down"></span></p>
-				<p class="bg-success text-success btn text-wrap">Okay! After the data is in the system, proceed to step 2.</p>
-			</div>
-			<div class="col-xs-6 text-center">
-				<p class="center-block"><span class="btn btn-danger btn-lg">No</span></p>
-				<p class="btn center-block"><span class="glyphicon glyphicon-arrow-down"></span></p>
-				<p class="btn bg-danger text-danger text-wrap">Okay! Proceed to step 2.</p>
-			</div>
-		  </div>	  
-	  </div>
-	  <script>
-	  function myFunctionBY1() {
-		document.getElementById("buttonYes1").style="display";
-		document.getElementById("buttonNo1").style="display: none";
-  		}
-	  </script>	  
-    </div>
-<!-- end step 1 >> Yes       -->
-    
-	<div class="col-xs-6 text-center">
+    <div class="row">
+        <!-- start step 1 >> Yes       -->
+        <div class="col-xs-6 text-center">
+            <p class="center-block"><span class="btn btn-success btn-lg" onclick="myFunctionB1Y()">Yes</span></p>
 
-	  <p class="center-block"><span class="btn btn-danger btn-lg" onclick="myFunctionBN1()">No</span></p>
-      
-	  <div id="buttonNo1" style="display: none">
-	  <p class="btn center-block"><span class="glyphicon glyphicon-arrow-down"></span></p>
-      <p class="bg-info text-info btn">Are you willing to put the data into the system?</p>
-      
-	  <div class="row">
-        <div class="col-xs-6 text-center">
-           <p class="btn"><span class="glyphicon glyphicon-arrow-down"></span>
+            <div id="button1Yes" style="display: none">
+                <p class="btn center-block"><span class="glyphicon glyphicon-arrow-down"></span></p>
+                <p class="bg-info text-info btn">Is the data in SAP (i.e. SAP BW database)?</p>
+                <div class="row">
+                    <div class="col-xs-6 text-center">
+                        <p class="btn"><span class="glyphicon glyphicon-arrow-down"></span>
+                    </div>
+                    <div class="col-xs-6 text-center">
+                        <p class="btn">
+                            <span class="glyphicon glyphicon-arrow-down"></span></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- start step 1 substep 1 >> Yes -->
+                    <div class="col-xs-6">
+                        <p class="center-block"><span class="btn btn-success btn-lg" onclick="myFunctionB11Y()">Yes</span></p>
+
+                        <div id="button11Yes" style="display: none">
+                            <p class="btn"><span class="glyphicon glyphicon-arrow-down"></span></p>
+                            <p class="bg-success text-success btn text-wrap">Okay! Please proceed to <b>step 2</b>.</p>
+                        </div>
+                        <script>
+                            function myFunctionB11Y() {
+                                document.getElementById("button1Yes").style = "display";
+                                document.getElementById("button1No").style = "display: none";
+                                document.getElementById("button11Yes").style = "display";
+                                document.getElementById("button11No").style = "display: none";
+                                document.getElementById("button12Yes").style = "display: none";
+                                document.getElementById("button12No").style = "display: none";
+                                document.getElementById("button2dashboard").style = "display: none";
+                                document.getElementById("button2Analytics").style = "display: none";
+                                document.getElementById("button3Yes").style = "display: none";
+                                document.getElementById("button3No").style = "display: none";
+                                document.getElementById("button31Yes").style = "display: none";
+                                document.getElementById("button31No").style = "display: none";
+                                document.getElementById("button32Yes").style = "display: none";
+                                document.getElementById("button32No").style = "display: none";
+                                document.getElementById("buttonStep2").style = "display";
+                                document.getElementById("buttonStep3").style = "display: none";
+                                document.getElementById("buttonStep4").style = "display: none";
+                                document.getElementById("buttonAFO").style = "display: none";
+                                document.getElementById("buttonPBI").style = "display: none";
+                                document.getElementById("buttonMS").style = "display: none";
+                                document.getElementById("buttonSAC").style = "display: none";
+                                document.getElementById("buttonEXCEL").style = "display: none";
+                                document.getElementById("buttonKAM").style = "display: none";
+								document.getElementById("buttonQlick").style = "display: none";
+                            }
+                        </script>
+                    </div>
+                    <!-- end step 1 substep 1 >> Yes -->
+
+                    <!-- start step 1 substep 1 >> No -->
+                    <div class="col-xs-6 text-center">
+                        <p class="center-block"><span class="btn btn-danger btn-lg" onclick="myFunctionB11N()">No</span></p>
+
+                        <div id="button11No" style="display: none">
+                            <p class="btn center-block"><span class="glyphicon glyphicon-arrow-down"></span></p>
+                            <p class="btn bg-danger text-danger text-wrap">A reporting tool has been chosen! Proceed to <b>step 4</b>.</p>
+                        </div>
+                        <script>
+                            function myFunctionB11N() {
+                                document.getElementById("button1Yes").style = "display";
+                                document.getElementById("button1No").style = "display: none";
+                                document.getElementById("button11Yes").style = "display: none";
+                                document.getElementById("button11No").style = "display";
+                                document.getElementById("button12Yes").style = "display: none";
+                                document.getElementById("button12No").style = "display: none";
+                                document.getElementById("button2dashboard").style = "display: none";
+                                document.getElementById("button2Analytics").style = "display: none";
+                                document.getElementById("button3Yes").style = "display: none";
+                                document.getElementById("button3No").style = "display: none";
+                                document.getElementById("button31Yes").style = "display: none";
+                                document.getElementById("button31No").style = "display: none";
+                                document.getElementById("button32Yes").style = "display: none";
+                                document.getElementById("button32No").style = "display: none";
+                                document.getElementById("buttonStep2").style = "display: none";
+                                document.getElementById("buttonStep3").style = "display: none";
+                                document.getElementById("buttonStep4").style = "display";
+                                document.getElementById("buttonAFO").style = "display: none";
+                                document.getElementById("buttonPBI").style = "display";
+                                document.getElementById("buttonMS").style = "display: none";
+                                document.getElementById("buttonSAC").style = "display";
+                                document.getElementById("buttonEXCEL").style = "display: none";
+                                document.getElementById("buttonKAM").style = "display: none";
+								document.getElementById("buttonQlick").style = "display: none";
+                            }
+                        </script>
+                    </div>
+                    <!-- end step 1 substep 1 >> No -->
+                </div>
+            </div>
+            <script>
+                function myFunctionB1Y() {
+                    document.getElementById("button1Yes").style = "display";
+                    document.getElementById("button1No").style = "display: none";
+                    document.getElementById("button11Yes").style = "display: none";
+                    document.getElementById("button11No").style = "display: none";
+                    document.getElementById("button12Yes").style = "display: none";
+                    document.getElementById("button12No").style = "display: none";
+                    document.getElementById("button2dashboard").style = "display: none";
+                    document.getElementById("button2Analytics").style = "display: none";
+                    document.getElementById("button3Yes").style = "display: none";
+                    document.getElementById("button3No").style = "display: none";
+                    document.getElementById("button31Yes").style = "display: none";
+                    document.getElementById("button31No").style = "display: none";
+                    document.getElementById("button32Yes").style = "display: none";
+                    document.getElementById("button32No").style = "display: none";
+                    document.getElementById("buttonStep2").style = "display: none";
+                    document.getElementById("buttonStep3").style = "display: none";
+                    document.getElementById("buttonStep4").style = "display: none";
+                    document.getElementById("buttonAFO").style = "display: none";
+                    document.getElementById("buttonPBI").style = "display: none";
+                    document.getElementById("buttonMS").style = "display: none";
+                    document.getElementById("buttonSAC").style = "display: none";
+                    document.getElementById("buttonEXCEL").style = "display: none";
+                    document.getElementById("buttonKAM").style = "display: none";
+					document.getElementById("buttonQlick").style = "display: none";
+                }
+            </script>
         </div>
+        <!-- end step 1 >> Yes       -->
+
+        <!-- start step 1 >> No      -->
         <div class="col-xs-6 text-center">
-          <p class="btn">
-          <span class="glyphicon glyphicon-arrow-down"></span></p>
+
+            <p class="center-block"><span class="btn btn-danger btn-lg" onclick="myFunctionB1N()">No</span></p>
+
+            <div id="button1No" style="display: none">
+                <p class="btn center-block"><span class="glyphicon glyphicon-arrow-down"></span></p>
+                <p class="bg-info text-info btn">Are you willing to put the data into the system?</p>
+
+                <div class="row">
+                    <div class="col-xs-6 text-center">
+                        <p class="btn"><span class="glyphicon glyphicon-arrow-down"></span>
+                    </div>
+                    <div class="col-xs-6 text-center">
+                        <p class="btn">
+                            <span class="glyphicon glyphicon-arrow-down"></span></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- start step 1 substep 2 >> Yes -->
+                    <div class="col-xs-6">
+                        <p class="center-block"><span class="btn btn-success btn-lg" onclick="myFunctionB12Y()">Yes</span></p>
+
+                        <div id="button12Yes" style="display: none">
+                            <p class="btn"><span class="glyphicon glyphicon-arrow-down"></span></p>
+                            <p class="bg-success text-success btn text-wrap">Okay! Please proceed to <b>step 4</b>.</p>
+                        </div>
+                        <script>
+                            function myFunctionB12Y() {
+                                document.getElementById("button1Yes").style = "display: none";
+                                document.getElementById("button1No").style = "display";
+                                document.getElementById("button11Yes").style = "display: none";
+                                document.getElementById("button11No").style = "display: none";
+                                document.getElementById("button12Yes").style = "display";
+                                document.getElementById("button12No").style = "display: none";
+                                document.getElementById("button2dashboard").style = "display: none";
+                                document.getElementById("button2Analytics").style = "display: none";
+                                document.getElementById("button3Yes").style = "display: none";
+                                document.getElementById("button3No").style = "display: none";
+                                document.getElementById("button31Yes").style = "display: none";
+                                document.getElementById("button31No").style = "display: none";
+                                document.getElementById("button32Yes").style = "display: none";
+                                document.getElementById("button32No").style = "display: none";
+                                document.getElementById("buttonStep2").style = "display: none";
+                                document.getElementById("buttonStep3").style = "display: none";
+                                document.getElementById("buttonStep4").style = "display";
+                                document.getElementById("buttonAFO").style = "display: none";
+                                document.getElementById("buttonPBI").style = "display: none";
+                                document.getElementById("buttonMS").style = "display: none";
+                                document.getElementById("buttonSAC").style = "display: none";
+                                document.getElementById("buttonEXCEL").style = "display: none";
+                                document.getElementById("buttonKAM").style = "display";
+								document.getElementById("buttonQlick").style = "display: none";
+                            }
+                        </script>
+                    </div>
+                    <!-- end step 1 substep 2 >> Yes -->
+
+                    <!-- start step 1 substep 2 >> No -->
+                    <div class="col-xs-6 text-center">
+                        <p class="center-block"><span class="btn btn-danger btn-lg" onclick="myFunctionB12N()">No</span></p>
+
+                        <div id="button12No" style="display: none">
+                            <p class="btn center-block"><span class="glyphicon glyphicon-arrow-down"></span></p>
+                            <p class="btn bg-danger text-danger text-wrap">The data must be in the system to use this service. Proceed to <b>step 4</b>.</p>
+                        </div>
+                        <script>
+                            function myFunctionB12N() {
+                                document.getElementById("button1Yes").style = "display: none";
+                                document.getElementById("button1No").style = "display";
+                                document.getElementById("button11Yes").style = "display: none";
+                                document.getElementById("button11No").style = "display: none";
+                                document.getElementById("button12Yes").style = "display: none";
+                                document.getElementById("button12No").style = "display";
+                                document.getElementById("button2dashboard").style = "display: none";
+                                document.getElementById("button2Analytics").style = "display: none";
+                                document.getElementById("button3Yes").style = "display: none";
+                                document.getElementById("button3No").style = "display: none";
+                                document.getElementById("button31Yes").style = "display: none";
+                                document.getElementById("button31No").style = "display: none";
+                                document.getElementById("button32Yes").style = "display: none";
+                                document.getElementById("button32No").style = "display: none";
+                                document.getElementById("buttonStep2").style = "display: none";
+                                document.getElementById("buttonStep3").style = "display: none";
+                                document.getElementById("buttonStep4").style = "display";
+                                document.getElementById("buttonAFO").style = "display: none";
+                                document.getElementById("buttonPBI").style = "display: none";
+                                document.getElementById("buttonMS").style = "display: none";
+                                document.getElementById("buttonSAC").style = "display: none";
+                                document.getElementById("buttonEXCEL").style = "display";
+                                document.getElementById("buttonKAM").style = "display: none";
+								document.getElementById("buttonQlick").style = "display: none";
+                            }
+                        </script>
+                    </div>
+                    <!-- end step 1 substep 2 >> No -->
+                </div>
+            </div>
+            <script>
+                function myFunctionB1N() {
+                    document.getElementById("button1Yes").style = "display: none";
+                    document.getElementById("button1No").style = "display";
+                    document.getElementById("button11Yes").style = "display: none";
+                    document.getElementById("button11No").style = "display: none";
+                    document.getElementById("button12Yes").style = "display: none";
+                    document.getElementById("button12No").style = "display: none";
+                    document.getElementById("button2dashboard").style = "display: none";
+                    document.getElementById("button2Analytics").style = "display: none";
+                    document.getElementById("button3Yes").style = "display: none";
+                    document.getElementById("button3No").style = "display: none";
+                    document.getElementById("button31Yes").style = "display: none";
+                    document.getElementById("button31No").style = "display: none";
+                    document.getElementById("button32Yes").style = "display: none";
+                    document.getElementById("button32No").style = "display: none";
+                    document.getElementById("buttonStep2").style = "display: none";
+                    document.getElementById("buttonStep3").style = "display: none";
+                    document.getElementById("buttonStep4").style = "display: none";
+                    document.getElementById("buttonAFO").style = "display: none";
+                    document.getElementById("buttonPBI").style = "display: none";
+                    document.getElementById("buttonMS").style = "display: none";
+                    document.getElementById("buttonSAC").style = "display: none";
+                    document.getElementById("buttonEXCEL").style = "display: none";
+                    document.getElementById("buttonKAM").style = "display: none";
+					document.getElementById("buttonQlick").style = "display: none";
+                }
+            </script>
         </div>
-      </div>
-      <div class="row">
-    <div class="col-xs-6">
-    <p class="center-block"><span class="btn btn-success btn-lg">Yes</span></p>
-          <p class="btn">
-          <span class="glyphicon glyphicon-arrow-down"></span></p>
-      <p class="bg-success text-success btn text-wrap">Okay! After the data is in the system, proceed to step 2.</p>
-      
+        <!-- end step 1 >> No        -->
     </div>
-    <div class="col-xs-6 text-center">
-             <p class="center-block"><span class="btn btn-danger btn-lg">No</span></p>
-       <p class="btn center-block"><span class="glyphicon glyphicon-arrow-down"></span></p>
-      <p class="btn bg-danger text-danger text-wrap">The data must be in the system to use this service.</p>
-    </div>
-      </div>
-	</div>
-	  <script>
-	  function myFunctionBN1() {
-		document.getElementById("buttonYes1").style="display: none";
-		document.getElementById("buttonNo1").style="display";
-  		}
-	  </script>
-    </div>
-  </div>
 </div>
+<!-- Step 1 - End -->
+
+<!-- Step 2 - Start -->
 <div class="container">
-  <h2 class="page-header">Step 2: What type of email is it?</h2>
-  <div class="row">
-    <div class="col-xs-12">
-  <p class="lead text-center bg-info btn text-info center-block">What type of email do you want to send?</p>
-      <div class="row">
-        <div class="col-xs-6 text-center">
-           <p class="btn"><span class="glyphicon glyphicon-arrow-down"></span>
+    <h3 class="page-header">Step 2: How do you want to display the data?</h3>
+    <div class="row">
+        <div id="buttonStep2" style="display: none">
+            <div class="col-xs-12">
+                <p class="lead text-center bg-info btn text-info center-block">Do you want a high level view on your <b>KPI's through visuals in a Dashboard</b> or do you want to perform a <b>detailed analysis</b> of your data?</p>
+                <div class="row">
+                    <div class="col-xs-6 text-center">
+                        <p class="btn"><span class="glyphicon glyphicon-arrow-down"></span>
+                    </div>
+                    <div class="col-xs-6 text-center">
+                        <p class="btn">
+                            <span class="glyphicon glyphicon-arrow-down"></span></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- start step 2 >> Analytics -->
+                    <div class="col-xs-6 text-center">
+                        <p class="center-block"><span class="btn btn-success btn-lg" onclick="myFunctionB2A()">Detailed Analysis</span></p>
+
+                        <div id="button2Analytics" style="display: none">
+                            <p class="btn center-block"><span class="glyphicon glyphicon-arrow-down"></span></p>
+
+                            <p class="bg-success text-success btn text-wrap">A reporting tool has been chosen! Proceed to <b>step 4</b>.</p>
+                        </div>
+                        <script>
+                            function myFunctionB2A() {
+                                document.getElementById("button1Yes").style = "display";
+                                document.getElementById("button1No").style = "display: none";
+                                document.getElementById("button11Yes").style = "display";
+                                document.getElementById("button11No").style = "display: none";
+                                document.getElementById("button12Yes").style = "display: none";
+                                document.getElementById("button12No").style = "display: none";
+                                document.getElementById("button2dashboard").style = "display: none";
+                                document.getElementById("button2Analytics").style = "display";
+                                document.getElementById("button3Yes").style = "display: none";
+                                document.getElementById("button3No").style = "display: none";
+                                document.getElementById("button31Yes").style = "display: none";
+                                document.getElementById("button31No").style = "display: none";
+                                document.getElementById("button32Yes").style = "display: none";
+                                document.getElementById("button32No").style = "display: none";
+                                document.getElementById("buttonStep2").style = "display";
+                                document.getElementById("buttonStep3").style = "display: none";
+                                document.getElementById("buttonStep4").style = "display";
+                                document.getElementById("buttonAFO").style = "display";
+                                document.getElementById("buttonPBI").style = "display: none";
+                                document.getElementById("buttonMS").style = "display: none";
+                                document.getElementById("buttonSAC").style = "display: none";
+                                document.getElementById("buttonEXCEL").style = "display: none";
+                                document.getElementById("buttonKAM").style = "display: none";
+								document.getElementById("buttonQlick").style = "display: none";
+                            }
+                        </script>
+                    </div>
+                    <!-- end step 2 >> Analytics -->
+
+                    <!-- start step 2 >> Dashboard -->
+                    <div class="col-xs-6 text-center">
+                        <p class="center-block"><span class="btn btn-info btn-lg" onclick="myFunctionB2D()">Dashboard</span></p>
+
+                        <div id="button2dashboard" style="display: none">
+                            <p class="btn center-block"><span class="glyphicon glyphicon-arrow-down"></span></p>
+
+                            <p class="bg-success text-success btn text-wrap">Okay! You can proceed to <b>step 3</b>. </p>
+                        </div>
+                        <script>
+                            function myFunctionB2D() {
+                                document.getElementById("button1Yes").style = "display";
+                                document.getElementById("button1No").style = "display: none";
+                                document.getElementById("button11Yes").style = "display";
+                                document.getElementById("button11No").style = "display: none";
+                                document.getElementById("button12Yes").style = "display: none";
+                                document.getElementById("button12No").style = "display: none";
+                                document.getElementById("button2dashboard").style = "display";
+                                document.getElementById("button2Analytics").style = "display: none";
+                                document.getElementById("button3Yes").style = "display: none";
+                                document.getElementById("button3No").style = "display: none";
+                                document.getElementById("button31Yes").style = "display: none";
+                                document.getElementById("button31No").style = "display: none";
+                                document.getElementById("button32Yes").style = "display: none";
+                                document.getElementById("button32No").style = "display: none";
+                                document.getElementById("buttonStep2").style = "display";
+                                document.getElementById("buttonStep3").style = "display";
+                                document.getElementById("buttonStep4").style = "display: none";
+                                document.getElementById("buttonAFO").style = "display: none";
+                                document.getElementById("buttonPBI").style = "display: none";
+                                document.getElementById("buttonMS").style = "display: none";
+                                document.getElementById("buttonSAC").style = "display: none";
+                                document.getElementById("buttonEXCEL").style = "display: none";
+                                document.getElementById("buttonKAM").style = "display: none";
+								document.getElementById("buttonQlick").style = "display: none";
+                            }
+                        </script>
+                    </div>
+                    <!-- end step 2 >> Dashboard -->
+
+                </div>
+            </div>
         </div>
-        <div class="col-xs-6 text-center">
-          <p class="btn">
-          <span class="glyphicon glyphicon-arrow-down"></span></p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-6 text-center">
-              <p class="center-block"><span class="btn btn-warning btn-lg">Newsletter</span></p>
-          <p class="btn center-block"><span class="glyphicon glyphicon-arrow-down"></span></p>
-            <p class="center-block bg-info text-info btn">Is it directly related to fundraising?</p>
-      <div class="row">
-        <div class="col-xs-6 text-center">
-           <p class="btn"><span class="glyphicon glyphicon-arrow-down"></span>
-        </div>
-        <div class="col-xs-6 text-center">
-          <p class="btn">
-          <span class="glyphicon glyphicon-arrow-down"></span></p>
-        </div>
-      </div>
-      <div class="row">
-    <div class="col-xs-6">
-    <p class="center-block"><span class="btn btn-success btn-lg">Yes</span></p>
-          <p class="btn">
-          <span class="glyphicon glyphicon-arrow-down"></span></p>
-      <p class="bg-success text-success btn text-wrap">Okay! You can proceed to step 3. </p>
-      
     </div>
-    <div class="col-xs-6 text-center">
-             <p class="center-block"><span class="btn btn-danger btn-lg">No</span></p>
-       <p class="btn center-block"><span class="glyphicon glyphicon-arrow-down"></span></p>
-      <p class="btn bg-danger text-danger text-wrap">Content must be directly related to fundraising to use this service.</p>
-    </div>
-      </div>
-        </div>
-        <div class="col-xs-6 text-center">
-              <p class="center-block"><span class="btn btn-success btn-lg">Solicitation</span></p>
-           <p class="btn center-block"><span class="glyphicon glyphicon-arrow-down"></span></p>
-      
-      <p class="bg-success text-success btn">Okay! Proceed to step 3.</p>
-    </div>
-        </div>
-          
-    </div>
-  </div>
 </div>
+<!-- Step 2 - End -->
+
+<!-- Step 3 - Start -->
+<div class="container">
+    <h3 class="page-header">Step 3: Would you like assistance and support from IT?</h3>
+    <div id="buttonStep3" style="display: none">
+        <div class="row">
+            <div class="col-xs-12">
+                <p class="lead text-center bg-info btn text-info center-block">Would you like the BI team to <b>assist building</b> a dashboard and to <b>provide support</b> after implementation?</p>
+                <div class="row">
+                    <div class="col-xs-6 text-center">
+                        <p class="btn"><span class="glyphicon glyphicon-arrow-down"></span>
+                    </div>
+                    <div class="col-xs-6 text-center">
+                        <p class="btn">
+                            <span class="glyphicon glyphicon-arrow-down"></span></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <!-- start step 3 >> Yes       -->
+            <div class="col-xs-6 text-center">
+                <p class="center-block"><span class="btn btn-success btn-lg" onclick="myFunctionB3Y()">Yes</span></p>
+
+                <div id="button3Yes" style="display: none">
+                    <p class="btn center-block"><span class="glyphicon glyphicon-arrow-down"></span></p>
+
+                    <p class="bg-success text-success btn">A reporting tool has been chosen! Proceed to <b>step 4</b>.</p>
+                </div>
+                <script>
+                    function myFunctionB3Y() {
+                        document.getElementById("button1Yes").style = "display";
+                        document.getElementById("button1No").style = "display: none";
+                        document.getElementById("button11Yes").style = "display";
+                        document.getElementById("button11No").style = "display: none";
+                        document.getElementById("button12Yes").style = "display: none";
+                        document.getElementById("button12No").style = "display: none";
+                        document.getElementById("button2dashboard").style = "display";
+                        document.getElementById("button2Analytics").style = "display: none";
+                        document.getElementById("button3Yes").style = "display";
+                        document.getElementById("button3No").style = "display: none";
+                        document.getElementById("button31Yes").style = "display: none";
+                        document.getElementById("button31No").style = "display: none";
+                        document.getElementById("button32Yes").style = "display: none";
+                        document.getElementById("button32No").style = "display: none";
+                        document.getElementById("buttonStep2").style = "display";
+                        document.getElementById("buttonStep3").style = "display";
+                        document.getElementById("buttonStep4").style = "display";
+                        document.getElementById("buttonAFO").style = "display: none";
+                        document.getElementById("buttonPBI").style = "display: none";
+                        document.getElementById("buttonMS").style = "display: none";
+                        document.getElementById("buttonSAC").style = "display";
+                        document.getElementById("buttonEXCEL").style = "display: none";
+                        document.getElementById("buttonKAM").style = "display: none";
+						document.getElementById("buttonQlick").style = "display: none";
+                    }
+                </script>
+            </div>
+            <!-- end step 3 >> Yes       -->
+
+            <!-- start step 3 >> No      -->
+            <div class="col-xs-6 text-center">
+
+                <p class="center-block"><span class="btn btn-danger btn-lg" onclick="myFunctionB3N()">No</span></p>
+
+                <div id="button3No" style="display: none">
+                    <p class="btn center-block"><span class="glyphicon glyphicon-arrow-down"></span></p>
+                    <p class="center-block bg-info text-info btn">Is your request related to Group Reporting?</p>
+
+                    <div class="row">
+                        <div class="col-xs-6 text-center">
+                            <p class="btn"><span class="glyphicon glyphicon-arrow-down"></span>
+                        </div>
+                        <div class="col-xs-6 text-center">
+                            <p class="btn">
+                                <span class="glyphicon glyphicon-arrow-down"></span></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- start step 3 substep 1 >> Yes -->
+                        <div class="col-xs-6">
+                            <p class="center-block"><span class="btn btn-success btn-lg" onclick="myFunctionB31Y()">Yes</span></p>
+
+                            <div id="button31Yes" style="display: none">
+                                <p class="btn"><span class="glyphicon glyphicon-arrow-down"></span></p>
+                                <p class="bg-success text-success btn text-wrap">A reporting tool has been chosen! Proceed to <b>step 4</b>. </p>
+                            </div>
+                            <script>
+                                function myFunctionB31Y() {
+                                    document.getElementById("button1Yes").style = "display";
+                                    document.getElementById("button1No").style = "display: none";
+                                    document.getElementById("button11Yes").style = "display";
+                                    document.getElementById("button11No").style = "display: none";
+                                    document.getElementById("button12Yes").style = "display: none";
+                                    document.getElementById("button12No").style = "display: none";
+                                    document.getElementById("button2dashboard").style = "display";
+                                    document.getElementById("button2Analytics").style = "display: none";
+                                    document.getElementById("button3Yes").style = "display: none";
+                                    document.getElementById("button3No").style = "display";
+                                    document.getElementById("button31Yes").style = "display";
+                                    document.getElementById("button31No").style = "display: none";
+                                    document.getElementById("button32Yes").style = "display: none";
+                                    document.getElementById("button32No").style = "display: none";
+                                    document.getElementById("buttonStep2").style = "display";
+                                    document.getElementById("buttonStep3").style = "display";
+                                    document.getElementById("buttonStep4").style = "display";
+                                    document.getElementById("buttonAFO").style = "display: none";
+                                    document.getElementById("buttonPBI").style = "display: none";
+                                    document.getElementById("buttonMS").style = "display";
+                                    document.getElementById("buttonSAC").style = "display";
+                                    document.getElementById("buttonEXCEL").style = "display: none";
+                                    document.getElementById("buttonKAM").style = "display: none";
+									document.getElementById("buttonQlick").style = "display: none";
+                                }
+                            </script>
+                        </div>
+                        <!-- end step 3 substep 1 >> Yes -->
+
+                        <!-- start step 3 substep 1 >> No -->
+                        <div class="col-xs-6 text-center">
+                            <p class="center-block"><span class="btn btn-danger btn-lg" onclick="myFunctionB31N()">No</span></p>
+
+                            <div id="button31No" style="display: none">
+                                <p class="btn center-block"><span class="glyphicon glyphicon-arrow-down"></span></p>
+                                <p class="center-block bg-info text-info btn">Is your request related to Procurement?</p>
+                                <div class="row">
+                                    <div class="col-xs-6 text-center">
+                                        <p class="btn"><span class="glyphicon glyphicon-arrow-down"></span>
+                                    </div>
+                                    <div class="col-xs-6 text-center">
+                                        <p class="btn">
+                                            <span class="glyphicon glyphicon-arrow-down"></span></p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <!-- start step 3 substep 2 >> Yes -->
+                                    <div class="col-xs-6">
+                                        <p class="center-block"><span class="btn btn-success btn-lg" onclick="myFunctionB32Y()">Yes</span></p>
+
+                                        <div id="button32Yes" style="display: none">
+                                            <p class="btn"><span class="glyphicon glyphicon-arrow-down"></span></p>
+                                            <p class="bg-success text-success btn text-wrap">A reporting tool has been chosen! Proceed to <b>step 4</b>. </p>
+                                        </div>
+                                        <script>
+                                            function myFunctionB32Y() {
+                                                document.getElementById("button1Yes").style = "display";
+                                                document.getElementById("button1No").style = "display: none";
+                                                document.getElementById("button11Yes").style = "display";
+                                                document.getElementById("button11No").style = "display: none";
+                                                document.getElementById("button12Yes").style = "display: none";
+                                                document.getElementById("button12No").style = "display: none";
+                                                document.getElementById("button2dashboard").style = "display";
+                                                document.getElementById("button2Analytics").style = "display: none";
+                                                document.getElementById("button3Yes").style = "display: none";
+                                                document.getElementById("button3No").style = "display";
+                                                document.getElementById("button31Yes").style = "display: none";
+                                                document.getElementById("button31No").style = "display";
+                                                document.getElementById("button32Yes").style = "display";
+                                                document.getElementById("button32No").style = "display: none";
+                                                document.getElementById("buttonStep2").style = "display";
+                                                document.getElementById("buttonStep3").style = "display";
+                                                document.getElementById("buttonStep4").style = "display";
+                                                document.getElementById("buttonAFO").style = "display: none";
+                                                document.getElementById("buttonPBI").style = "display: none";
+                                                document.getElementById("buttonMS").style = "display: none";
+                                                document.getElementById("buttonSAC").style = "display";
+                                                document.getElementById("buttonEXCEL").style = "display: none";
+                                                document.getElementById("buttonKAM").style = "display: none";
+												document.getElementById("buttonQlick").style = "display";
+                                            }
+                                        </script>
+                                    </div>
+                                    <!-- end step 3 substep 2 >> Yes -->
+
+                                    <!-- start step 3 substep 2 >> No -->
+                                    <div class="col-xs-6 text-center">
+                                        <p class="center-block"><span class="btn btn-danger btn-lg" onclick="myFunctionB32N()">No</span></p>
+
+                                        <div id="button32No" style="display: none">
+                                            <p class="btn center-block"><span class="glyphicon glyphicon-arrow-down"></span></p>
+                                            <p class="bg-danger text-danger btn text-wrap">A reporting tool has been chosen! Proceed to <b>step 4</b>.</p>
+                                        </div>
+                                        <script>
+                                            function myFunctionB32N() {
+                                                document.getElementById("button1Yes").style = "display";
+                                                document.getElementById("button1No").style = "display: none";
+                                                document.getElementById("button11Yes").style = "display";
+                                                document.getElementById("button11No").style = "display: none";
+                                                document.getElementById("button12Yes").style = "display: none";
+                                                document.getElementById("button12No").style = "display: none";
+                                                document.getElementById("button2dashboard").style = "display";
+                                                document.getElementById("button2Analytics").style = "display: none";
+                                                document.getElementById("button3Yes").style = "display: none";
+                                                document.getElementById("button3No").style = "display";
+                                                document.getElementById("button31Yes").style = "display: none";
+                                                document.getElementById("button31No").style = "display";
+                                                document.getElementById("button32Yes").style = "display: none";
+                                                document.getElementById("button32No").style = "display";
+                                                document.getElementById("buttonStep2").style = "display";
+                                                document.getElementById("buttonStep3").style = "display";
+                                                document.getElementById("buttonStep4").style = "display";
+                                                document.getElementById("buttonAFO").style = "display: none";
+                                                document.getElementById("buttonPBI").style = "display: none";
+                                                document.getElementById("buttonMS").style = "display: none";
+                                                document.getElementById("buttonSAC").style = "display";
+                                                document.getElementById("buttonEXCEL").style = "display: none";
+                                                document.getElementById("buttonKAM").style = "display: none";
+												document.getElementById("buttonQlick").style = "display: none";
+                                            }
+                                        </script>
+                                    </div>
+                                    <!-- end step 3 substep 2 >> No -->
+                                </div>
+                            </div>
+                            <script>
+                                function myFunctionB31N() {
+                                    document.getElementById("button1Yes").style = "display";
+									document.getElementById("button1No").style = "display: none";
+									document.getElementById("button11Yes").style = "display";
+									document.getElementById("button11No").style = "display: none";
+									document.getElementById("button12Yes").style = "display: none";
+									document.getElementById("button12No").style = "display: none";
+									document.getElementById("button2dashboard").style = "display";
+									document.getElementById("button2Analytics").style = "display: none";
+									document.getElementById("button3Yes").style = "display: none";
+									document.getElementById("button3No").style = "display";
+									document.getElementById("button31Yes").style = "display: none";
+									document.getElementById("button31No").style = "display";
+									document.getElementById("button32Yes").style = "display: none";
+									document.getElementById("button32No").style = "display: none";
+									document.getElementById("buttonStep2").style = "display";
+									document.getElementById("buttonStep3").style = "display";
+									document.getElementById("buttonStep4").style = "display: none";
+									document.getElementById("buttonAFO").style = "display: none";
+									document.getElementById("buttonPBI").style = "display: none";
+									document.getElementById("buttonMS").style = "display: none";
+									document.getElementById("buttonSAC").style = "display: none";
+									document.getElementById("buttonEXCEL").style = "display: none";
+									document.getElementById("buttonKAM").style = "display: none";
+									document.getElementById("buttonQlick").style = "display: none";
+                                }
+                            </script>
+                        </div>
+                        <!-- end step 3 substep 1 >> No -->
+
+                    </div>
+                </div>
+                <script>
+                    function myFunctionB3N() {
+                        document.getElementById("button1Yes").style = "display";
+                        document.getElementById("button1No").style = "display: none";
+                        document.getElementById("button11Yes").style = "display";
+                        document.getElementById("button11No").style = "display: none";
+                        document.getElementById("button12Yes").style = "display: none";
+                        document.getElementById("button12No").style = "display: none";
+                        document.getElementById("button2dashboard").style = "display";
+                        document.getElementById("button2Analytics").style = "display: none";
+                        document.getElementById("button3Yes").style = "display: none";
+                        document.getElementById("button3No").style = "display";
+						document.getElementById("button31Yes").style = "display: none";
+						document.getElementById("button31No").style = "display: none";
+						document.getElementById("button32Yes").style = "display: none";
+						document.getElementById("button32No").style = "display: none";
+						document.getElementById("buttonStep2").style = "display";
+						document.getElementById("buttonStep3").style = "display";
+						document.getElementById("buttonStep4").style = "display: none";
+						document.getElementById("buttonAFO").style = "display: none";
+						document.getElementById("buttonPBI").style = "display: none";
+						document.getElementById("buttonMS").style = "display: none";
+						document.getElementById("buttonSAC").style = "display: none";
+						document.getElementById("buttonEXCEL").style = "display: none";
+						document.getElementById("buttonKAM").style = "display: none";
+						document.getElementById("buttonQlick").style = "display: none";
+                    }
+                </script>
+            </div>
+            <!-- end step 3 >> No        -->
+        </div>
+    </div>
+</div>
+<!-- Step 3 - End -->
+
+<!-- Step 4 - Start -->
+<div class="container">
+    <h3 class="page-header">Step 4: Adviced reporting tool for your needs !</h3>
+    <div class="row">
+        <div id="buttonStep4" style="display: none">
+
+            <div id="buttonAFO" style="display: none">
+                <div class="col-xs-6">
+                    <p class="center-block"><span class="btn btn-primary btn-lg">
+				<b>SAP Analysis for Office (AfO)</b> 
+				<br>
+				<br>Analysis for Office is the <b>preferred reporting tool within Borealis</b>.
+				<br>It is the only supported tool for detailed data analysis.</br>
+				<font size="-1">(other reporting tools are only intended for high level view on data via Dashboards)</font>
+				<br>
+				<br>Available as both <b>Full-Service IT</b> tool and <b>Self-Service</b>.</br>
+				<a href="https://borealisgroup.sharepoint.com/sites/BICommunity/SitePages/Analysis-for-Office-Wiki.aspx">
+				<img src="https://borealisgroup.sharepoint.com/:i:/s/BICommunity/ESjKGjouZOpMuZtxmrLlQMYBKK-PLvYJ9zVqem-gYjiLZg?e=lwsP1J" alt="AfO">
+				<br><font size="-2">(click here)</font></a></span></p>
+                </div>
+            </div>
+
+            <div id="buttonPBI" style="display: none">
+                <div class="col-xs-6">
+                    <!-- <p class="lead text-center bg-info btn text-info center-block"> -->
+                    <p class="center-block"><span class="btn btn-warning btn-lg">
+				<b>MicroSoft Power BI</b> 
+				<br>
+				<br>Power BI aims to provide interactive visualizations and 
+				<br>business intelligence capabilities intended
+				<br>for end users to create their own dashboards.
+				<br>
+				<br>Currently <b>only</b> available as <b>Self-Service</b> tool.</br>
+				<a href="https://borena.mignetwork.net/coll/cop/supbinet/PowerBi%20Wiki/Home.aspx">
+				<img src="https://borealisgroup.sharepoint.com/:i:/s/BICommunity/EZITNq-MgxxKmFRxQj3L1N8BQaBB1Ird0CGeSCo9uHzYjQ?e=WGWW8H" alt="Power BI">
+				<br><font size="-2">(click here)</font></a></span></p>
+                </div>
+            </div>
+
+            <div id="buttonMS" style="display: none">
+                <div class="col-xs-6">
+                    <!-- <p class="lead text-center bg-info btn text-info center-block"> -->
+                    <p class="center-block"><span class="btn btn-danger btn-lg">
+				<b>MicroStrategy</b> 
+				<br>
+				<br>MicroStrategy aims to provide interactive visualizations
+				<br>intended for end users to create their own dashboards.
+				<br>
+				<br>Available as <b>Self-Service</b> tool in specific departments.</br>
+				<a href="https://borena.mignetwork.net/coll/cop/supbinet/Microstrategy%20tool/Home.aspx">
+				<img src="https://borealisgroup.sharepoint.com/:i:/s/BICommunity/EeuJu0tOl81BvlD4eR8iAIEBvaSKbX-EvsOMtnJAs5ANDw?e=tLpLOu" alt="MicroStrategy">
+				<br><font size="-2">(click here)</font></a></span></p>
+                </div>
+            </div>
+
+			<div id="buttonQlick" style="display: none">
+                <div class="col-xs-6">
+                    <!-- <p class="lead text-center bg-info btn text-info center-block"> -->
+                    <p class="center-block"><span class="btn btn-success btn-lg">
+				<b>Qlick</b> 
+				<br>
+				<br>Qlick aims to provide interactive visualizations 
+				<br>intended for end users to create their own dashboards.
+				<br>
+				<br><b>Only</b> available as <b>Self-Service</b> tool in specific departments.</br>
+				<a href="https://www.qlik.com/us/products/qlikview">
+				<img src="https://borealisgroup.sharepoint.com/:i:/s/BICommunity/Efxby3TrwW1Kj4tNISCzFM4BhpxmaA4aZ8JumLnKxyH7xw?e=HBXzTS" alt="Qlick">
+				<br><font size="-2">(click here)</font></a></span></p>
+                </div>
+            </div>
+
+            <div id="buttonSAC" style="display: none">
+                <div class="col-xs-6">
+                    <!-- <p class="lead text-center bg-info btn text-info center-block"> -->
+                    <p class="center-block"><span class="btn btn-primary btn-lg">
+				<b>SAP Analytics Cloud (SAC)</b> 
+				<br>
+				<br>SAP Analytics Cloud is a cloud solution providing interactive
+				<br>visualizations and analytics capabilities to all users in one product.</br>
+				<br>Available as both <b>Full-Service IT</b> tool and <b>Self-Service</b>.</br>
+				<a href="https://borealisgroup.sharepoint.com/sites/BICommunity/SitePages/Analysis-for-Office-Wiki.aspx">
+				<img src="https://borealisgroup.sharepoint.com/:i:/s/BICommunity/EXY0pnzHXF5OqHYOqAuHdNABU7tVF7siDeBbqQxM_0tFzw?e=C2eKBR" alt="SAP Analytics Cloud">
+				<br><font size="-2">(click here)</font></a></span></p>
+                </div>
+            </div>
+			
+			<div id="buttonEXCEL" style="display: none">
+                <div class="col-xs-6">
+                    <p class="center-block"><span class="btn btn-danger btn-lg text-wrap">
+				Unfortunately our advice needs to be to continue working in Excel
+				<br>For reporting within Borealis some sort of data government needs to be put in place</br>
+				</span></p>
+                </div>
+            </div>
+
+            <div id="buttonKAM" style="display: none">
+                <div class="col-xs-6">
+                    <p class="center-block"><span class="btn btn-warning btn-lg">
+				Please contact the the <a href="mailto:Business_Intelligence_Team@BOREALISGROUP.COM">Business Intelligence team</a> to define any quick wins putting the data in the system
+				<br>It might be needed to contact your Key Account Manager to instigate a project. </br>
+				</span></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Step 4 - End -->
 
 <footer>
-  <div class="container">
-  <hr>
-  <p>Footer information here. For more questions please call the person that you know to call with your questions. </p>
-  </div>
+    <div class="container">
+        <hr>
+        <p>Please do not hesitate to contact the <a href="mailto:Business_Intelligence_Team@BOREALISGROUP.COM">Business Intelligence team</a> for more information or for assistance in building analytical reports or dashboards. </p>
+        <p class="alignright"><span class="btn btn-link btn-xs text-wrap" onclick="myFunctionALL()">x</span></p>
+    </div>
+    <!-- Toggle show all -->
+    <script>
+        function myFunctionALL() {
+            if (document.getElementById("button11Yes").style.display === "none") {
+                document.getElementById("button1Yes").style = "display";
+                document.getElementById("button1No").style = "display";
+                document.getElementById("button11Yes").style = "display";
+                document.getElementById("button11No").style = "display";
+                document.getElementById("button12Yes").style = "display";
+                document.getElementById("button12No").style = "display";
+                document.getElementById("button2dashboard").style = "display";
+                document.getElementById("button2Analytics").style = "display";
+                document.getElementById("button3Yes").style = "display";
+                document.getElementById("button3No").style = "display";
+                document.getElementById("button31Yes").style = "display";
+                document.getElementById("button31No").style = "display";
+                document.getElementById("button32Yes").style = "display";
+                document.getElementById("button32No").style = "display";
+                document.getElementById("buttonStep2").style = "display";
+                document.getElementById("buttonStep3").style = "display";
+                document.getElementById("buttonStep4").style = "display";
+                document.getElementById("buttonAFO").style = "display";
+                document.getElementById("buttonPBI").style = "display";
+                document.getElementById("buttonMS").style = "display";
+                document.getElementById("buttonSAC").style = "display";
+                document.getElementById("buttonEXCEL").style = "display";
+                document.getElementById("buttonKAM").style = "display";
+				document.getElementById("buttonQlick").style = "display";
+            } else {
+                document.getElementById("button1Yes").style = "display: none";
+                document.getElementById("button1No").style = "display: none";
+                document.getElementById("button11Yes").style = "display: none";
+                document.getElementById("button11No").style = "display: none";
+                document.getElementById("button12Yes").style = "display: none";
+                document.getElementById("button12No").style = "display: none";
+                document.getElementById("button2dashboard").style = "display: none";
+                document.getElementById("button2Analytics").style = "display: none";
+                document.getElementById("button3Yes").style = "display: none";
+                document.getElementById("button3No").style = "display: none";
+                document.getElementById("button31Yes").style = "display: none";
+                document.getElementById("button31No").style = "display: none";
+                document.getElementById("button32Yes").style = "display: none";
+                document.getElementById("button32No").style = "display: none";
+                document.getElementById("buttonStep2").style = "display: none";
+                document.getElementById("buttonStep3").style = "display: none";
+                document.getElementById("buttonStep4").style = "display: none";
+                document.getElementById("buttonAFO").style = "display: none";
+                document.getElementById("buttonPBI").style = "display: none";
+                document.getElementById("buttonMS").style = "display: none";
+                document.getElementById("buttonSAC").style = "display: none";
+                document.getElementById("buttonEXCEL").style = "display: none";
+                document.getElementById("buttonKAM").style = "display: none";
+				document.getElementById("buttonQlick").style = "display: none";
+            }
+        }
+    </script>
 </footer>
